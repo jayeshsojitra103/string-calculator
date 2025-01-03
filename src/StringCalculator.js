@@ -15,5 +15,5 @@ export const add = (numbers) => {
     throw new Error(`Negative numbers not allowed: ${negatives.join(", ")}`);
   }
 
-  return nums.reduce((sum, num) => sum + num, 0);
+  return nums.reduce((sum, num) => sum + num, 0) || 0;
 };
